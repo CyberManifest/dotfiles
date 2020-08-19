@@ -149,8 +149,8 @@ sleep 2
 echo "Setting Path Environment for /etc/skel/.zshenv ..."
 echo
 # Put the following into the /etc/skel/.zshenv
-sudo echo 'typeset -U path' >> /etc/skel/.zshenv
-sudo echo 'path=(~/.local/bin $path[@])' >> /etc/skel/.zshenv
+sudo echo 'typeset -U path' | sudo tee -a /etc/skel/.zshenv
+sudo echo 'path=(~/.local/bin $path[@])' | sudo tee -a /etc/skel/.zshenv
 echo
 sleep 3
 echo
@@ -318,7 +318,7 @@ echo
 echo "Now to install OpenBox ..."
 echo
 sleep 2
-sudo apt install openbox tint2 tint2conf
+sudo apt install openbox tint2
 echo
 echo "Now to confirm lightdm is installed ..."
 echo
@@ -349,18 +349,18 @@ sudo dpkg -i "$HOME/Downloads/mintinstall-icons_1.0.7_all.deb"
 echo
 sleep 3
 echo "installing term tools..."
-sudo apt install mc ranger dunst scrot newsboat dosbox
+sudo apt install mc ranger dunst scrot newsboat dosbox lynx irssi irssi-scripts
 echo "installing gui stuff..."
 sudo apt install plank hexchat hexchat-plugins zathura mpv vlc
 echo "installing fun ..." 
 sudo apt install lolcat cowsay fortune fortunes figlet toilet sl cmatrix oneko espeak conky libaa-bin bb dosbox
 echo "installing system tools..."
-sudo apt install gparted filezilla transmission gdebi catfish mugshot
+sudo apt install gparted filezilla transmission gdebi catfish mugshot xarchiver
 sudo apt install apparmor apparmor-utils apparmor-notify apparmor-easyprof apparmor-profiles apparmor-profiles-extra
 echo "installing fileformat tools..."
 sudo apt install dos2unix ntfs-3g exfat-fuse eject hfsplus hfsutils hfsprogs rpi-imager
 echo "installing multimedia software..."
-sudo apt install pianobar mpd ncmpcpp cmus pithos audacity feh gimp audacious pinta
+sudo apt install pianobar mpd ncmpcpp cmus pulseaudio pithos audacity feh gimp gimp-help-en gimp-data-extras gimp-python audacious pinta
 echo "installing communications software..."
 sudo apt install geary neomutt telnet
 echo "installing Official Raspberry Pi Stuff..."
@@ -374,13 +374,13 @@ sudo apt install bluez bluez-firmware bluetooth blueman pi-bluetooth network-man
 sudo apt install xscreensaver xscreensaver-data xscreensaver-gl-extra xscreensaver-data-extra rss-glx
 sudo apt install xtrlock
 echo "install Office Suite..."
-sudo apt installl libreoffice
+sudo apt install libreoffice
 echo "install Development tools..."
 sudo apt install build-essential libcurses-perl libncurses-dev automake
 sudo apt install geany geany-plugins
 sudo apt install nodered bluej greenfoot
-sudo apt install wolfram-engine wolframscript fonts-mathematica libmath-quaternion-perl libmath-combinatronics-perl
-sudo apt install python3-thonny python3-thonny-pi
+sudo apt install wolfram-engine wolframscript fonts-mathematica libmath-quaternion-perl
+sudo apt install python3-thonny-pi
 sudo apt install scratch scratch2
 sudo apt install sonic-pi sonic-pi-samples 
 sudo apt install sense-hat python3-pisense python3-sense-emu python3-sense-hat
