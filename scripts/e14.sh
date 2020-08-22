@@ -293,7 +293,8 @@ echo "..."
 echo
 sleep 4
 echo
-echo "Let's uninstall LXDE and install just OpenBox ..."
+#echo "Let's uninstall LXDE and install just OpenBox ..."
+echo "Let's install and confirm the GUI setup ..."
 echo
 echo "Let's do some updates first..."
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt full-upgrade && sudo apt clean
@@ -308,23 +309,24 @@ sudo apt install --no-install-recommends xserver-xorg
 sudo apt install --no-install-recommends xinit
 sleep 2
 echo
-echo "Now we can uninstall LXDE ... "
-echo
-sleep 2
-sudo apt purge lxde*
+#echo "Now we can uninstall LXDE ... "
+#echo
+#sleep 2
+#sudo apt purge lxde*
 #sudo apt install task-xfce-desktop xfce4 xfce4-terminal xfce4-goodies xfce4-screenshooter #Installs XFCE
-sleep 2
-echo 
-echo "Now to install OpenBox ..."
-echo
-sleep 2
-sudo apt install openbox tint2
+#sleep 2
+#echo 
+#echo "Now to install OpenBox ..."
+#echo
+#sleep 2
+#sudo apt install openbox tint2
+sudo apt install tin2
 echo
 echo "Now to confirm lightdm is installed ..."
 echo
 sleep 2
 sudo apt install lightdm
-echo "Now to set OpenBox as default Window Manger ..."
+echo "Now to set the default Window Manger ..."
 sudo update-alternatives --config x-session-manager
 echo
 sleep 3
