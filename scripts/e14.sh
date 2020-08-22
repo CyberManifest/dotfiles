@@ -370,7 +370,7 @@ sudo apt install rpi-chromium-mods
 sudo apt install pix-icons
 sudo apt install menulibre
 sudo apt install raspi-config rc-gui
-sudo apt install bluez bluez-firmware bluetooth blueman pi-bluetooth network-manager-gnome nm-tray
+#sudo apt install bluez bluez-firmware bluetooth blueman pi-bluetooth network-manager-gnome nm-tray
 # sudo apt install rpd-icons raspberrypi-artwork rpd-plym-splash rpd-wallpaper
 # sudo apt install raspberrypi-ui-mods pi-greeter pishutdown pipanel raspberrypi-net-mods raspberrypi-sys-mods
 sudo apt install xscreensaver xscreensaver-data xscreensaver-gl-extra xscreensaver-data-extra rss-glx
@@ -391,9 +391,9 @@ echo
 sleep 3
 echo
 # Fix WiFi & Bluetooth
-sudo nano /etc/NetworkManager/NetworkManager.conf 
-sudo iwlist wlan0 scan
-sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+#sudo nano /etc/NetworkManager/NetworkManager.conf 
+#sudo iwlist wlan0 scan
+#sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 # Fix Wireless Mouse
 # Copy Cow Files Over try to use pkexec thunar
 # Copy scripts over
