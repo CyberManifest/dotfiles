@@ -320,7 +320,7 @@ echo
 #echo
 #sleep 2
 #sudo apt install openbox tint2
-sudo apt install tin2
+sudo apt install tint2
 echo
 echo "Now to confirm lightdm is installed ..."
 echo
