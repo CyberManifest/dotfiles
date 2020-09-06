@@ -294,6 +294,24 @@ echo
 sleep 4
 echo
 #echo "Let's uninstall LXDE and install just OpenBox ..."
+echo "Let's install compiling and building tools ..."
+echo
+sudo apt install build-essential libcurses-perl libncurses-dev make automake
+sudo apt install autoconf
+sudo apt install binutils-for-build
+sudo apt install git
+sudo apt install gcc
+sudo apt install gcc-8
+sudo apt install clang-tools-7
+sudo apt install python
+sudo apt install python3
+sudo apt install meson
+sudo apt install ninja-build
+sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev  libpcre2-dev  libevdev-dev uthash-dev libev-dev libx11-xcb-dev
+sudo apt install asciidoc
+echo
+sleep 3
+echo
 echo "Let's install and confirm the GUI setup ..."
 echo
 echo "Let's do some updates first..."
@@ -316,20 +334,24 @@ echo
 #sudo apt install task-xfce-desktop xfce4 xfce4-terminal xfce4-goodies xfce4-screenshooter #Installs XFCE
 #sleep 2
 #echo 
+# Install OpenBox Window Manager #
 #echo "Now to install OpenBox ..."
 #echo
 #sleep 2
 #sudo apt install openbox tint2
-sudo apt install tint2
+#sudo apt install tint2
+# Install bspwm Window Manager
+sudo apt install bspwm sxhkd
+sudo apt install dunst rofi
 echo
 echo "Now to confirm lightdm is installed ..."
 echo
 sleep 2
 sudo apt install lightdm
-echo "Now to set the default Window Manger ..."
-sudo update-alternatives --config x-session-manager
-echo
-sleep 3
+#echo "Now to set the default Window Manger ..."
+#sudo update-alternatives --config x-session-manager
+#echo
+#sleep 3
 echo
 echo "Let's install additional software..."
 echo
@@ -351,34 +373,62 @@ sudo dpkg -i "$HOME/Downloads/mintinstall-icons_1.0.7_all.deb"
 echo
 sleep 3
 echo "installing term tools..."
-sudo apt install mc ranger dunst scrot newsboat dosbox lynx irssi irssi-scripts
+echo
+sudo apt install rxvt-unicode st
+sudo apt install less htop
+sudo apt install mc ranger scrot newsboat dosbox irssi irssi-scripts
+echo
 echo "installing gui stuff..."
-sudo apt install plank hexchat hexchat-plugins zathura mpv vlc
-echo "installing fun ..." 
+echo
+sudo apt install nitrogen trayer pnmixer mousepad zathura
+sudo apt install thunar xfce4-screenshooter xfce4-panel xfce4-notifyd
+echo
+echo "installing fun ..."
+echo
 sudo apt install lolcat cowsay fortune fortunes figlet toilet sl cmatrix oneko espeak conky libaa-bin bb dosbox
+echo
 echo "installing system tools..."
+echo
 sudo apt install gparted filezilla transmission gdebi catfish mugshot xarchiver
 sudo apt install apparmor apparmor-utils apparmor-notify apparmor-easyprof apparmor-profiles apparmor-profiles-extra
+echo
 echo "installing fileformat tools..."
-sudo apt install dos2unix ntfs-3g exfat-fuse eject hfsplus hfsutils hfsprogs rpi-imager
+echo
+sudo apt install dos2unix
+sudo apt install ntfs-3g exfat-fuse eject hfsplus hfsutils hfsprogs rpi-imager
+echo
 echo "installing multimedia software..."
-sudo apt install pianobar mpd ncmpcpp cmus pulseaudio pithos audacity feh gimp gimp-help-en gimp-data-extras gimp-python audacious pinta
+echo
+sudo apt install mpv vlc ffmpeg
+sudo apt install feh inkscape gimp gimp-help-en gimp-data-extras gimp-python
+sudo apt install pinta
+sudo apt install pianobar mpd ncmpcpp cmus pulseaudio pithos audacity audacious
+echo
 echo "installing communications software..."
+echo
+sudo apt install bluez bluez-firmware bluetooth blueman pi-bluetooth network-manager-gnome nm-tray
 sudo apt install geary neomutt telnet
+sudo apt install midori lynx links2 w3m
+sudo apt install hexchat hexchat-plugins
+echo
 echo "installing Official Raspberry Pi Stuff..."
+echo
 sudo apt install rpi-chromium-mods
 sudo apt install pix-icons
-sudo apt install menulibre
-sudo apt install raspi-config rc-gui
-#sudo apt install bluez bluez-firmware bluetooth blueman pi-bluetooth network-manager-gnome nm-tray
+#sudo apt install menulibre
+sudo apt install rc-gui
+sudo apt install raspi-config
 # sudo apt install rpd-icons raspberrypi-artwork rpd-plym-splash rpd-wallpaper
 # sudo apt install raspberrypi-ui-mods pi-greeter pishutdown pipanel raspberrypi-net-mods raspberrypi-sys-mods
 sudo apt install xscreensaver xscreensaver-data xscreensaver-gl-extra xscreensaver-data-extra rss-glx
 sudo apt install xtrlock
+echo
 echo "install Office Suite..."
+echo
 sudo apt install libreoffice
+echo
 echo "install Development tools..."
-sudo apt install build-essential libcurses-perl libncurses-dev automake
+echo
 sudo apt install geany geany-plugins
 sudo apt install nodered bluej greenfoot
 sudo apt install wolfram-engine wolframscript fonts-mathematica libmath-quaternion-perl
