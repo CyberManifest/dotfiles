@@ -376,14 +376,14 @@ echo
 sleep 3
 echo "installing term tools..."
 echo
-sudo apt install rxvt-unicode st
+sudo apt install rxvt-unicode
 sudo apt install less htop
 sudo apt install mc ranger scrot newsboat dosbox irssi irssi-scripts
 echo
 echo "installing gui stuff..."
 echo
 sudo apt install nitrogen trayer pnmixer mousepad zathura
-sudo apt install thunar xfce4-screenshooter xfce4-panel xfce4-notifyd
+sudo apt install thunar xfce4-screenshooter xfce4-panel xfce4-notifyd gnome-system-tools
 echo
 echo "installing fun ..."
 echo
@@ -408,7 +408,7 @@ sudo apt install pianobar mpd ncmpcpp cmus pulseaudio pithos audacity audacious
 echo
 echo "installing communications software..."
 echo
-sudo apt install bluez bluez-firmware bluetooth blueman pi-bluetooth network-manager-gnome nm-tray
+sudo apt install bluez bluez-firmware bluez-cups bluetooth blueman pi-bluetooth network-manager-gnome nm-tray
 sudo apt install geary neomutt telnet
 sudo apt install midori lynx links2 w3m
 sudo apt install hexchat hexchat-plugins
@@ -434,7 +434,7 @@ echo
 sudo apt install geany geany-plugins
 sudo apt install nodered bluej greenfoot
 sudo apt install wolfram-engine wolframscript fonts-mathematica libmath-quaternion-perl
-sudo apt install python3-thonny-pi
+#sudo apt install python3-thonny-pi #Depends: thonny but it is not going to be installed
 sudo apt install scratch scratch2
 sudo apt install sonic-pi sonic-pi-samples 
 sudo apt install sense-hat python3-pisense python3-sense-emu python3-sense-hat
