@@ -1,0 +1,26 @@
+#!/bin/zsh
+echo
+echo "[Performing Full System Update and Upgrade]"
+echo
+echo "First To Perform A Standard Update & Upgrade"
+echo
+upgd
+echo
+echo "Now To Perform Additional Updates & Upgrades"
+echo "Pleae Wait For The Process To Complete..."
+echo
+sudo apt dist-upgrade && sudo apt full-upgrade
+echo
+echo "Now To Perform Another Standard Update & Upgrade To Refresh Cache"
+echo
+upgd
+echo "Now To Perform A System Firmware and Kernel  Update & Upgrade"
+echo "Please Wait For The Process To Complete..."
+echo
+sudo rpi-update
+echo
+echo " ~ Done ~ "
+echo " Thank You For Waiting "
+echo
+echo "You May Want To Reboot Now"
+echo

@@ -1,0 +1,11 @@
+#!/bin/zsh
+echo
+echo "[Performing Standard Update & Upgrade]"
+echo "Please Wait While The Process Is Performed..."
+echo
+sudo apt-get update && sudo apt update && sudo apt upgrade
+echo
+echo "~Done~"
+echo "Thank You For Waiting"
+echo
+
