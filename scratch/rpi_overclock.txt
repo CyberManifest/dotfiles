@@ -1,0 +1,12 @@
+current_limit_override=0x5A000020
+max_usb_current=1
+force_turbo=1
+arm_freq=1500
+gpu_freq=500
+core_freq=500
+sdram_freq=500
+sdram_schmoo=0x02000020
+over_voltage=8
+sdram_over_voltage=8
+avoid_pwm_pll=1
+avoid_warnings=2
