@@ -1,3 +1,4 @@
+disable_pvt=1
 current_limit_override=0x5A000020
 max_usb_current=1
 force_turbo=1
