@@ -1,0 +1,8 @@
+250.1 GB (232.89 GiB) Capacity
+
+[ unallocated ]      4 MiB           4 MiB      4.1943 MB
+[ Boot /boot ]     256 MiB         256 MiB     268.435 MB
+[ Root / ]      114.24 GiB   116981.76 MiB  122.664266 GB 122664.266 MB
+[ <Swap> ]           4 GiB        4096 MiB     4.29497 GB    4294.97 MB
+[ Home /home ]  114.24 GiB   116981.76 MiB  122.664266 GB 122664.266 MB
+[ unallocated ] 157.18 MiB      157.18 MiB  164.815176 MB
