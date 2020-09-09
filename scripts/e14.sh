@@ -303,7 +303,7 @@ sudo apt install git
 sudo apt install gcc
 sudo apt install gcc-8
 sudo apt install clang
-sudo apt install clang-7
+sudo apt install clang-7 clang-7-doc
 sudo apt install clang-tools-7
 sudo apt install python
 sudo apt install python3
