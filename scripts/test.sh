@@ -6,4 +6,5 @@ echo
 fortune
 echo "going to list the contents of the directory..."
 ls -la
-tac ~/test.sh | sed '1,3 d' | tac > ~/test.sh
+echo "this line will get deleted..."
+printf '$-1,$d\nw\nq\n' | ed -s ~/test.sh
