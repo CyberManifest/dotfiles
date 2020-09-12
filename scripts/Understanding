@@ -1,0 +1,16 @@
+echo line to be deleted...
+printf '$-1,$d\nw\nq\n' | ed -s ~/test.sh
+
+
+printf #get screen buffer
+$ #goto end of buffer
+-1 #go to previous line
+, #make edits here
+$ # ????
+d\n #delete line
+w # write file out
+\nq # goto new line and quit ?
+\n # ?? new line
+| ed #pipe to ed
+-s #save
+~/test.sh #file to save to.
